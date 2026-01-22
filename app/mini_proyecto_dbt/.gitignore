@@ -1,0 +1,13 @@
+# Archivos generados por dbt
+target/
+dbt_packages/
+logs/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+.env
+*.sqlite3
+
+# MacOS
+.DS_Store

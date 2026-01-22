@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: orders_summary
+    description: 'Resumen de pedidos agregados por ID'
+    columns:
+      - name: id
+        description: 'ID del pedido'
+        tests:
+          - not_null
+      - name: total_pedidos
+        description: 'Total sumado de pedidos por ID'
+        tests:
+          - not_null
+

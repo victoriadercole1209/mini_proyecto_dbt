@@ -1,0 +1,26 @@
+ version: 2 
+models:
+  - name :  stg_customers
+    description: 'Modelo de clientes de prueba'
+    columns:
+      - name: id
+        description: 'ID del cliente'
+        tests:
+          - not_null
+          - unique
+      - name: nombre
+        description: 'Nombre del cliente'
+        tests:
+          - not_null
+  - name: stg_orders
+    description: 'Modelo de pedidos de prueba'
+    columns:
+      - name: id
+        description: 'ID del pedido'
+        tests:
+          - not_null
+      - name: total
+        description: 'Total del pedido'
+        tests: 
+          - not_null
+
